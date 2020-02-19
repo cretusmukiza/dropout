@@ -1,0 +1,87 @@
+nav{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 15.8vh;
+    width:100%;
+    align-items: center;
+    background: #007dab;
+    font-size:0.9rem;
+    z-index: 1000;
+    position: absolute;
+
+    
+
+
+}
+a:hover{
+    cursor: pointer;
+}
+nav a:first-child{
+    width: 10%;
+}
+.active{
+    color: "#f2f1f7"
+}
+nav a:first-child svg{
+    font-size:2.6rem;
+    color:#000;
+}
+nav a{
+    text-decoration: none;
+}
+nav ul{
+    width: 47%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding:0rem;
+    list-style: none;
+    margin-right: -2rem;
+    
+}
+nav ul li{
+    margin-right: 1.3rem;
+    height:100%;
+    padding:0.5rem;
+    font-size:0.9rem;
+}
+nav ul li a{
+    text-decoration: none;
+    color:white;
+    height: 100%;
+}
+
+nav div{
+    margin-right: 2rem;
+    font-size:2.2rem;
+}
+nav div svg{
+    margin-right: 1rem;
+    
+}
+nav div span{
+    border:1px solid #242424;
+    background: white;
+    font-size:1rem;
+    padding: 0.3rem 0.8rem 0.3rem 0.8rem;
+    position:relative;
+    top:-0.5rem;
+}
+@media only screen and (max-width:800px){
+    nav{
+        flex-direction: column-reverse;
+        height: auto;
+        justify-content: flex-start;
+        align-items: flex-start
+    }
+    nav ul{
+        width: 98%;
+        font-size:0.6rem;
+
+    }
+    nav ul li{
+        font-size:0.8rem;
+    }
+}

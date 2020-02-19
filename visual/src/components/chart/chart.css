@@ -1,0 +1,44 @@
+select,button{
+    width:32%;
+    padding:0.5rem;
+    margin-top:1rem;
+    margin-left:0.2%;
+    margin-bottom: 1.5%;
+    background: #0336ff;
+    border:1px solid #0336ff;
+    color:#fff;
+    border-radius: 0.3rem;
+
+}
+select:active{
+    outline:none;
+    box-shadow: none;
+    font-weight: 700;
+    box-shadow:none;
+    border:1px solid #2979FF;
+}
+select option:hover{
+    background:white;
+    color:black;
+}
+body{
+    font-family: 'Quicksand', sans-serif;
+}
+.my-pretty-chart-container{
+    font-family: 'Quicksand', sans-serif;
+    border:1px solid #f2f1f7;
+    padding:1.2rem;
+    min-height: 48vh;
+
+}
+#select{
+    width: 100%;
+    display:flex;
+    justify-content: flex-start
+
+}
+@media only screen and (max-width:800px){
+    .my-pretty-chart-container{
+        height: 100%;
+    }
+}

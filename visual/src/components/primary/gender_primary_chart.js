@@ -1,0 +1,36 @@
+import React,{Component} from 'react';
+import Menu from '../menu/menu';
+import {NavLink} from 'react-router-dom';
+import GenderChart from '../genderchart/genderchart';
+import {data} from '../../region_primary';
+class GenderPrimaryChart extends Component{
+    constructor(props){
+        super(props);
+        this.state={
+            data:[]
+
+        }
+    }
+    componentWillMount(){
+
+    }
+    render(){
+        return(
+            <div className="App">
+            <Menu>
+            <div className="menu-header" style={{
+                alignItems:"flex-start",
+            }}>
+               <NavLink exact to="/primary">Total dropouts in regions</NavLink >               
+                <NavLink exact to="/primary/gender">Male / Female dropouts in region</NavLink>
+                <NavLink ecact to="/primary/district">total dropouts in districts</NavLink>
+            </div>  
+            <GenderChart data={data} />           
+            </Menu> 
+
+            </div>
+
+        )
+    }
+}
+export default GenderPrimaryChart;

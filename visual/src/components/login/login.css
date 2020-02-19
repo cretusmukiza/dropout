@@ -1,0 +1,82 @@
+.home{
+    background: #1389E7;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    font-family: 'Quicksand', sans-serif;
+}
+.form{
+    margin:5rem auto;
+    background:white;
+    height:60vh;
+    width:30%;
+    border-radius:0.4rem;
+    text-align: center;
+    padding: 0;
+
+}
+.form h2{
+    text-align: center;
+    text-transform: capitalize;
+    color: #1389E7;
+}
+.form input{
+    width: 78%;
+    padding: 0.6rem 1rem 0.6rem 1rem;
+    margin-bottom:1.3rem;
+    border-radius: 0.2rem;
+    border:1px solid #cac8d1;
+    
+}
+.form input[type="submit"]{
+    width:85.9%;
+    text-transform: capitalize;
+    font-size:1rem;
+    font-family: 'Quicksand', sans-serif;
+    background: #1389E7;
+    color:white
+}
+input:active{
+    border: 1px solid #1389E7;
+    outline:none;
+    box-shadow: none;
+
+}
+input::placeholder{
+    font-family: 'Quicksand', sans-serif;
+}
+.form-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f2f1f7;
+    position: relative;
+    bottom: -2.7rem;;
+    height: 20%;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+   
+}
+.form-footer p a{
+    color:#1389E7;
+    text-decoration: none
+}
+.form div.errors{
+    width:92%;
+    padding-left:2rem;
+    color:red
+}
+.status{
+    display: flex;
+    justify-content: center;
+    
+}
+@media only screen and (max-width:800px){
+    .form{
+        width: 100%;
+        height: 100%;
+        margin:0;
+        border-radius: 0;
+        
+    }
+}

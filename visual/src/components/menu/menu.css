@@ -1,0 +1,160 @@
+.menu{
+    width:100%;    
+    min-height: 84vh;
+    overflow: scroll;
+    height: 100vh;
+    font-family: 'nunito';
+   
+    
+}
+.menu-ls{
+    width:80%;
+    display: flex;
+    margin:1rem auto;
+    flex-direction: column;
+    margin-top: 6rem;
+    
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #007dab;
+    height: 8vh;
+   
+}
+footer div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+    color: white
+}
+.menu-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height:8vh;
+    width:100%;
+
+}
+.menu-header p{
+    width:20%;
+    display: flex;
+    justify-content: flex-start;
+    
+    padding:0.5rem 0.2rem 0.5rem 0.2rem;
+    font-size:0.9rem;
+}
+.menu-header a{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color:#242424;
+    height: 100%;
+    text-decoration: none;
+}
+.menu-header a:first-child{
+    padding:0 0.3rem 0 0.3rem;
+}
+.menu-header p:first-child{
+    width:8%;
+    border:1px solid #242424;
+    justify-content: flex-start
+}
+.menu-header p:last-child{
+    justify-content: flex-end;
+    padding-right: 0.2rem;
+}
+.menu-header p:last-child span{
+    margin-left:0.6rem;
+    border:1px solid #242424;
+    padding:0.2rem;
+    position: relative;
+    top:-0.15rem;
+}
+.menu-welcome{
+    text-align: justify;
+    height:12vh;
+    margin-bottom: 2rem;
+    margin-top:1.5rem;
+}
+.map{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height:120vh;
+    width: 100%;
+    
+}
+
+
+.dropout-map{
+    display: flex;
+    flex-direction: column;
+    width:48%;
+    height:96%;
+    text-align: left;
+}
+.map-header{
+    height:6%;
+}
+ .map-content{
+    height:100%;
+    margin-bottom: 36px;
+
+}
+.map-footer{
+    display: flex;
+    align-items: center;
+    padding-top:1.7rem;
+    height:10%
+}
+.map-graph{
+    border:1px solid #ccc;
+    height:40%;
+    margin-bottom: 0.5rem;
+}
+@media only screen and (max-width:800px){
+    .menu-ls{
+        width: 88%;
+    }
+    .menu-header{
+        height: 17%;
+    }
+  .menu-header p:first-child{
+      width:27%;
+  }
+  .menu-welcome{
+      height: auto;
+      font-size:0.8rem;
+      margin-bottom: 1rem;
+  }
+  .map{
+      flex-direction: column;
+      height: auto;
+  }
+  .dropout-map{
+      width:100%;
+      height: auto;
+  }
+  .map-header{
+      height: 10%;
+      padding-bottom: 1rem;
+      
+  }
+  .map-footer{
+      height: 30%;
+      padding-top:2rem;
+      padding-bottom: 2rem
+  }
+  .map-content{
+      height:70%;
+      background:blue;
+      padding:0;
+    
+  }
+  
+}
